@@ -1,3 +1,10 @@
+/*Write a subroutine manipolaLista that takes as input a dynamic singly linked list 
+of integers l. The subroutine returns the list l modified as follows: in the last node, 
+store the product of the second-to-last node and the last node; in the second-to-last 
+node, store the product of the third-to-last node and the second-to-last node; and so 
+on. The first node remains unchanged.*/
+
+
 #include <stdio.h>
 
 typedef struct nodo_{
@@ -47,4 +54,5 @@ nodo_t *delete(nodo_t *l){
         free(tmp);
     }
     return NULL;
+
 }

@@ -1,13 +1,11 @@
 #include <stdio.h>
 #include <string.h>
 
-/*Scrivere un sottoprogramma calcolaNumero che riceve in ingresso una matrice bidimensionale di interi m (dichiarata nel chiamante con un
-numero di colonne pari a NCOL), una stringa per e qualsiasi altro parametro strettamente necessario. La stringa per rappresenta un percorso ed
-è organizzata in coppie di caratteri, dove il primo indica una direzione (’U’: alto, ’D’: basso, ’L’: sinistra, ’R’: destra) mentre il secondo è una
-cifra che indica la lunghezza dello spostamento in numero di celle; si assuma che la stringa sia ben formata. Considerando come punto iniziale la
-cella in alto a sinistra, il sottoprogramma esegue il percorso descritto da per sulla matrice m e calcola la somma di tutti i valori delle celle in cui si
-ferma. Al termine dell’elaborazione del percorso il sottoprogramma restituisce la somma ottenuta al chiamante. Nel caso il percorso finisca oltre il
-perimetro della matrice, il sottoprogramma restituisce -1.*/
+/*Write a function calcolaNumero that receives as input a bi-dimensional matrix of integers 'm' (declared from the caller with a number of columns equal to 'NCOL'), 
+a string 'per' and any other necessary parameter. The string represents a path and it's composed by couples of characters, the first one standing for a direction
+(’U’: up, ’D’: down, ’L’: left, ’R’: right) while the second one is a digit standing for the length of the movement in number of cells. The string id by hypothesis well formed.
+Considering the starting point to be the cell in the top-left corner, the function follows the path described by 'per' on the matrix 'm' and calculates the sum of all the values of the cells
+where it stops. At the end, the function returns the sum to the caller. If the path goes out of the borders of 'm', the function return -1.
 
 
 int calcolaNumero(int m[][NCOL], int nr, int nc, char *per){

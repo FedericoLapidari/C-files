@@ -1,7 +1,10 @@
 /*Write a subprogram minmaxchar that receives as a parameter a string vocabolo 
 consisting of uppercase and lowercase alphabetic characters. The subprogram 
 returns to the caller the smallest and the largest alphabetic characters in 
-alphabetical order, regardless of whether they are lowercase or uppercase.*/
+alphabetical order, regardless of whether they are lowercase or uppercase.
+Write a program that receives as command-line arguments a sequence of strings 
+and, for each of them, computes (using minmaxchar) and displays the smallest 
+and the largest alphabetic characters contained in it.*/
 
 #include <stdio.h>
 
@@ -47,4 +50,5 @@ void minmaxchar(char *vocabolo, char *max, char *min){
         
     }
     return;
+
 }
